@@ -1,0 +1,44 @@
+create table UCZNIOWIE(
+id_ucznia number(6),
+imie varchar(40),
+nazwisko varchar(40)
+);
+create table Dyrekcja(
+id_autora number(8),
+imie varchar(20),
+nazwisko varchar(40)
+);
+create table Nauczyciele(
+id_nauczyciela number(6),
+imie varchar(20),
+nazwisko varchar(40)
+);
+create table administracja(
+id_administracji number(7),
+imie varchar(20),
+nazwisko varchar(40)
+);
+create table wozny(
+id_woznego number(7),
+imie varchar(20),
+nazwisko varchar(40)
+);
+create table sprzataczki(
+id_sprzataczki number(7),
+imie varchar(20),
+nazwisko varchar(40)
+);
+alter table Uczniowie
+add constraint Uczniowie primary key (id_ucznia);
+alter table dyrekcja
+add constraint Dyrekcja primary key (id_autora);
+alter table nauczyciele
+add constraint nauczyciele primary key (id_nauczyciela);
+alter table administracja
+add constraint Administracja primary key (id_administracji);
+alter table wozny
+add constraint wozny primary key (id_woznego);
+alter table sprzataczki
+add constraint sprzataczki primary key (id_sprzataczki);
+
+
